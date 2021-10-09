@@ -3,12 +3,11 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
-}
+// 用法一, 直接装饰类, 没有传入参数
+import { Component, Vue } from "vue-property-decorator";
+@Component
+class HelloWorld extends Vue {}
+export default HelloWorld;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
